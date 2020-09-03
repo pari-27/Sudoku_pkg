@@ -1,0 +1,136 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: grey;
+  padding: 20px 10px;
+}
+
+.inval{
+  
+ font-size: 30px;
+ height:30px;
+ width:30px;
+}
+
+#newgame {
+  position: relativer;
+  margin-left: 40%;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  
+  float: right;
+ 
+}
+.level{
+  
+  width: 100%;
+  height: 370px;
+  font-family:"Roboto";
+  padding: 15px 20px;
+  position: absolute;
+  font-size: 25px;
+  cursor: pointer;
+  top:10%
+  }
+
+
+.grid{
+  visibility: hidden;
+  position: absolute;;
+  top:30%;
+  left:35%
+  
+}
+
+table, td {
+  border: 0.5px ridge black;
+  font-size: 30px;
+  border-collapse: collapse;
+}
+
+td{
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+input[type="text"]{
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: black;
+  color: antiquewhite;
+  margin: auto;
+  padding: 0px 20px 0px 20px;
+  border: 1px solid #888;
+  width: 25%;
+  height:25%;
+}
+
+.modal-content button{
+  margin-top: 5%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}

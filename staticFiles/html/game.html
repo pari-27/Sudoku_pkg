@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Sudoku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../stylesheet/game.css">
+    <script src="../scripts/game.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <b>SUDOKU</b>
+        </div>
+        <div class="header-right">
+
+
+        </div>
+    </div>
+
+    <div class="level">
+        <label>Level:</label>
+        <select id="level" onchange="changeDifficulty()">
+            <option value="0" selected>Easy</option>
+            <option value="1">Medium</option>
+            <option value="3">Hard</option>
+            <option value="4">Expert</option>
+        </select>
+        <div style="float: right;">Chances left :<span id="chances"></span></div>
+    </div>
+    <center>
+
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="message"></p>
+                
+                <button onclick="newGame()">New Game</button>
+                <button onclick="quit()">Quit Game</button>
+            </div>
+
+        </div>
+
+        <div class="grid" id="Sgrid">
+            <table id="sudoku"></table>
+        </div>
+    </center>
+    <div class="scoreboard"></div>
+    </div>
+
+</body>
+
+</html>
